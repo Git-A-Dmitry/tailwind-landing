@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
-    <script src="https://kit.fontawesome.com/eac214047d.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/eac214047d.js" crossorigin="anonymous"></script> -->
     <title>Document</title>
   </head>
 
   <body class="font-Poppins">
     <header>
       <nav class="container flex items-center py-4 mt-4 sm:mt-12">
-        <!-- <h1 class="text-bookmark-purple">Hello world!</h1> -->
         <div class="py-1"><img src="./imgs/logo-bookmark.svg" alt="" /></div>
-        <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
-          <li class="cursor-pointer">Features</li>
-          <li class="cursor-pointer">Pricing</li>
-          <li class="cursor-pointer">Contacts</li>
-          <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button>
+
+        <ul class="flex-1 justify-end md:items-center md:gap-10 sm:flex md:flex text-xl uppercase font-semibold bg-blue-200 sm:bg-white z-[11] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 pl-7 md:opacity-100 opacity-100 top-[-400px] transition-all ease-in-out duration-700">
+          <li class="mx-4 my-6 md:my-0 cursor-pointer">Features</li>
+          <li class="mx-4 my-6 md:my-0 cursor-pointer">Pricing</li>
+          <li class="mx-4 my-6 md:my-0 cursor-pointer">Contacts</li>
+          <button type="button" class="bg-bookmark-red text-white rounded-md mx-4 my-6 md:my-0 px-7 py-3 uppercase">Login</button>
         </ul>
-        <div class="flex sm:hidden flex-1 justify-end">
-          <i class="text-2xl fas fa-bars"></i>
-        </div>
+
+        <span class="flex flex-1 justify-end cursor-pointer mx-2 md:hidden">
+          <ion-icon name="menu" class="text-3xl text-gray-500 z-20" onclick="toggleMenu(this)"></ion-icon>
+        </span>
+        <!-- <div class="flex sm:hidden flex-1 justify-end cursor-pointer">
+          <i id="toggle" name="menu" class="text-2xl fas fa-bars" onclick="toggleMenu(this)"></i>
+        </div> -->
       </nav>
     </header>
 
@@ -45,5 +49,18 @@
       <!-- Rounded Rectangle -->
       <div class="hidden md:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg: -bottom-28 lg: -right-36"></div>
     </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- <script src="index.js"></script> -->
+
+    <script>
+      function toggleMenu(e) {
+        let list = document.querySelector('ul');
+
+        e.name === 'menu' ? ((e.name = 'close'), list.classList.add('top-[0px]'), list.classList.add('opacity-100')) : ((e.name = 'menu'), list.classList.remove('top-[0px]'), list.classList.remove('opacity-100'));
+      }
+    </script>
   </body>
 </html>
