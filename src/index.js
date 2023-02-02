@@ -1,20 +1,12 @@
-// function toggleMenu(e) {
-//   let list = document.querySelector('ul');
+const nav_list = document.querySelector('ul');
+const icon = document.querySelector('.menu-icon');
 
-//   e.name === 'menu' ? ((e.name = 'close'), list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : ((e.name = 'menu'), list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'));
+// function toggleMenu(e) {
+//   e.name === 'menu' ? ((e.name = 'close'), nav_list.classList.add('top-[0px]'), nav_list.classList.add('opacity-100')) : ((e.name = 'menu'), nav_list.classList.remove('top-[0px]'), nav_list.classList.remove('opacity-100'));
 // }
 
-// const toggleBtn = document.querySelector('#toggle');
-// const nav = document.querySelector('nav ul');
-
-// let navIsOpen = false;
-
-// toggleBtn.addEventListener('click', () => {
-//   navIsOpen = !navIsOpen;
-
-//   if (navIsOpen) {
-//     nav.className = 'hidden';
-//   } else {
-//     nav.className = '';
-//   }
-// });
+nav_list.addEventListener('click', () => {
+  nav_list.classList.remove('top-[0px]');
+  nav_list.classList.remove('opacity-100');
+  icon.name = 'menu';
+});

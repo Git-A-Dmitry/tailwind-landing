@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,18 +11,24 @@
 
   <body class="font-Poppins">
     <header>
-      <nav class="container flex items-center py-4 mt-4 sm:mt-12">
-        <div class="py-1"><img src="./imgs/logo-bookmark.svg" alt="" /></div>
+      <nav class="container flex items-center py-4 mt-4 sm:mt-5">
+        <div class="py-5"><img src="./imgs/logo-bookmark.svg" alt="" /></div>
 
-        <ul class="flex-1 justify-end md:items-center md:gap-10 sm:flex md:flex text-xl uppercase font-semibold bg-blue-200 sm:bg-white z-[11] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 pl-7 md:opacity-100 opacity-100 top-[-400px] transition-all ease-in-out duration-700">
-          <li class="mx-4 my-6 md:my-0 cursor-pointer">Features</li>
-          <li class="mx-4 my-6 md:my-0 cursor-pointer">Pricing</li>
-          <li class="mx-4 my-6 md:my-0 cursor-pointer">Contacts</li>
-          <button type="button" class="bg-bookmark-red text-white rounded-md mx-4 my-6 md:my-0 px-7 py-3 uppercase">Login</button>
+        <ul class="flex-1 justify-end md:items-center md:gap-1 sm:flex md:flex text-xl md:text-base uppercase font-semibold bg-bookmark-white sm:bg-white z-[11] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 pl-7 md:opacity-100 opacity-100 top-[-400px] transition-all ease-in-out duration-700">
+          <li class="mx-4 my-6 md:my-0 cursor-pointer">
+            <a class="inline-block py-3 px-2 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-700 duration-500" href="#features">Features</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0 cursor-pointer">
+            <a class="inline-block py-3 px-2 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-700 duration-500" href="#pricing">Pricing</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0 cursor-pointer">
+            <a class="inline-block py-3 px-2 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-700 duration-500" href="#pricing">Contacts</a>
+          </li>
+          <button type="button" class="bg-bookmark-red text-white hover:bg-bookmark-purple hover:text-white rounded-md mx-4 my-6 md:my-0 px-7 py-3 uppercase">Login</button>
         </ul>
 
         <span class="flex flex-1 justify-end cursor-pointer mx-2 md:hidden">
-          <ion-icon name="menu" class="text-3xl text-gray-500 z-20" onclick="toggleMenu(this)"></ion-icon>
+          <ion-icon name="menu" class="menu-icon text-3xl text-gray-500 z-20" onclick="toggleMenu(this)"></ion-icon>
         </span>
         <!-- <div class="flex sm:hidden flex-1 justify-end cursor-pointer">
           <i id="toggle" name="menu" class="text-2xl fas fa-bars" onclick="toggleMenu(this)"></i>
@@ -50,16 +56,89 @@
       <div class="hidden md:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg: -bottom-28 lg: -right-36"></div>
     </section>
 
+    <!-- Features -->
+    <section id="features" class="bg-bookmark-white py-20 mt-20 lg:mt-60">
+      <!-- Heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookmark-blue">Features</h1>
+        <p class="text-center text-bookmark-grey mt-4">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+
+      <!-- Feature #1 -->
+      <div class="relative mt-20 lg:mt-24">
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <!-- prettier-ignore -->
+            <img 
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" 
+              src="./imgs/illustration-features-tab-1.png" 
+              alt="" />
+            <!-- prettier-ignore -->
+          </div>
+
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Bookmark in one click</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"></div>
+      </div>
+
+      <!-- Feature #2 -->
+      <div class="relative mt-20 lg:mt-52">
+        <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <!-- prettier-ignore -->
+            <img 
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" 
+              src="./imgs/illustration-features-tab-2.png" 
+              alt="" />
+            <!-- prettier-ignore -->
+          </div>
+
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Intelligent search</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Our powerful search feature will help you find saved sites in no time at all. No need to crawl through all of your bookmarks.</p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 -bottom-24 -right-36"></div>
+      </div>
+
+      <!-- Feature #3 -->
+      <div class="relative mt-20 lg:mt-52">
+        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <!-- prettier-ignore -->
+            <img 
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" 
+              src="./imgs/illustration-features-tab-3.png" 
+              alt="" />
+            <!-- prettier-ignore -->
+          </div>
+
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookmark-blue">Share your bookmarks</h1>
+            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button</p>
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+          </div>
+        </div>
+        <!-- Rounded Rectangle -->
+        <div class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"></div>
+      </div>
+    </section>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
 
     <script>
       function toggleMenu(e) {
-        let list = document.querySelector('ul');
-
-        e.name === 'menu' ? ((e.name = 'close'), list.classList.add('top-[0px]'), list.classList.add('opacity-100')) : ((e.name = 'menu'), list.classList.remove('top-[0px]'), list.classList.remove('opacity-100'));
+        e.name === 'menu' ? ((e.name = 'close'), nav_list.classList.add('top-[0px]'), nav_list.classList.add('opacity-100')) : ((e.name = 'menu'), nav_list.classList.remove('top-[0px]'), nav_list.classList.remove('opacity-100'));
       }
     </script>
   </body>
