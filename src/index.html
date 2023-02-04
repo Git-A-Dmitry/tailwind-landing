@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
-    <!-- <script src="https://kit.fontawesome.com/eac214047d.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/eac214047d.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
 
@@ -14,7 +14,8 @@
       <nav class="container flex items-center py-4 mt-4 sm:mt-5">
         <div class="py-5"><img src="./imgs/logo-bookmark.svg" alt="" /></div>
 
-        <ul class="flex-1 justify-end md:items-center md:gap-1 sm:flex md:flex text-xl md:text-base uppercase font-semibold bg-bookmark-white sm:bg-white z-[11] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 pl-7 md:opacity-100 opacity-100 top-[-400px] transition-all ease-in-out duration-700">
+        <ul class="flex-1 justify-end md:items-center md:gap-1 sm:flex md:flex text-xl md:text-base uppercase font-semibold bg-bookmark-white sm:bg-white z-[11] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 pl-7 md:opacity-100 opacity-95 top-[-400px] transition-all ease-in-out duration-700">
+          <!-- <span class="close-icon sm:hidden"><i class="fal fa-times"></i></span> -->
           <li class="mx-4 my-6 md:my-0 cursor-pointer">
             <a class="inline-block py-3 px-2 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-700 duration-500" href="#features">Features</a>
           </li>
@@ -28,11 +29,10 @@
         </ul>
 
         <span class="flex flex-1 justify-end cursor-pointer mx-2 md:hidden">
-          <ion-icon name="menu" class="menu-icon text-3xl text-gray-500 z-20" onclick="toggleMenu(this)"></ion-icon>
+          <div class="flex sm:hidden flex-1 justify-end cursor-pointer">
+            <i name="menu" class="menu-icon text-2xl fas fa-bars"></i>
+          </div>
         </span>
-        <!-- <div class="flex sm:hidden flex-1 justify-end cursor-pointer">
-          <i id="toggle" name="menu" class="text-2xl fas fa-bars" onclick="toggleMenu(this)"></i>
-        </div> -->
       </nav>
     </header>
 
@@ -53,7 +53,7 @@
         </div>
       </div>
       <!-- Rounded Rectangle -->
-      <div class="hidden md:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg: -bottom-28 lg: -right-36"></div>
+      <div class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/5 top-32 right-0"></div>
     </section>
 
     <!-- Features -->
@@ -105,7 +105,7 @@
           </div>
         </div>
         <!-- Rounded Rectangle -->
-        <div class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 -bottom-24 -right-36"></div>
+        <div class="hidden lg:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/5 -bottom-10 right-0"></div>
       </div>
 
       <!-- Feature #3 -->
@@ -135,11 +135,5 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <script src="index.js"></script>
-
-    <script>
-      function toggleMenu(e) {
-        e.name === 'menu' ? ((e.name = 'close'), nav_list.classList.add('top-[0px]'), nav_list.classList.add('opacity-100')) : ((e.name = 'menu'), nav_list.classList.remove('top-[0px]'), nav_list.classList.remove('opacity-100'));
-      }
-    </script>
   </body>
 </html>
