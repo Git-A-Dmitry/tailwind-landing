@@ -15,3 +15,24 @@
 .btn-white {
   @apply bg-bookmark-white;
 }
+
+/* @keyframes popHeading {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  animation: popHeading 1s ease-in-out;
+} */
+
+/* .show {
+  transform: scale(1);
+  opacity: 1;
+  transition: 1.5s ease-out;
+} */

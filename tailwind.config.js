@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: ['./src/**/*{html, js}'],
+  content: ['./src/**/*{html,js}'],
   theme: {
     extend: {
       colors: {
@@ -9,6 +10,9 @@ module.exports = {
         'bookmark-blue': '#242A45',
         'bookmark-grey': '#9194A2',
         'bookmark-white': '#f7f7f7',
+      },
+      transitionDuration: {
+        2000: '2000ms',
       },
     },
     fontFamily: {
