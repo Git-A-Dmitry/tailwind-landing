@@ -80,10 +80,18 @@
             <!-- prettier-ignore -->
           </div>
 
-          <div class="flex flex-1 flex-col items-center lg:items-start">
+          <div class="relative flex flex-1 flex-col items-center lg:items-start">
             <h1 class="lazy text-3xl text-bookmark-blue opacity-0 scale-80 transition duration-1000">Bookmark in one click</h1>
             <p class="lazy text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full opacity-0 scale-80 transition duration-1000">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
+
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black" onclick="toggle()">More Info</button>
+
+            <!-- <div class="popup fixed top-10 left-52 w-1/3 p-10 bg-slate-50 rounded-md z-20 invisible duration-500"> -->
+            <div class="popup invisible fixed w-1/3 p-8 top-14 right-36 bg-slate-200 rounded-md z-20 scale-75">
+              <h2 class="pb-5 text-xl">What is Lorem Ipsum?</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <!-- <a href="#" onclick="toggle()">Close</a> -->
+            </div>
           </div>
         </div>
         <!-- Rounded Rectangle -->
