@@ -17,16 +17,16 @@
         <ul class="flex-1 justify-end md:items-center md:gap-1 sm:flex md:flex text-xl md:text-base uppercase font-semibold bg-bookmark-white sm:bg-white z-[11] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 pl-7 md:opacity-100 opacity-95 top-[-400px] transition-all ease-in-out duration-700">
           <!-- <span class="close-icon sm:hidden"><i class="fal fa-times"></i></span> -->
           <li class="mx-4 my-6 md:my-0 cursor-pointer">
-            <a class="inline-block py-3 px-2 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-700 duration-500" href="#features">Features</a>
+            <a class="nav-link" href="#features">Features</a>
           </li>
           <li class="mx-4 my-6 md:my-0 cursor-pointer">
-            <a class="inline-block py-3 px-2 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-700 duration-500" href="#download">Download</a>
+            <a class="nav-link" href="#download">Download</a>
           </li>
           <li class="mx-4 my-6 md:my-0 cursor-pointer">
-            <a class="inline-block py-3 px-2 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-700 duration-500" href="#pricing">Pricing</a>
+            <a class="nav-link" href="#faq">FAQ</a>
           </li>
           <li class="mx-4 my-6 md:my-0 cursor-pointer">
-            <a class="inline-block py-3 px-2 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-700 duration-500" href="#pricing">Contacts</a>
+            <a class="nav-link" href="#pricing">Contacts</a>
           </li>
           <!-- <button type="button" class="bg-bookmark-red text-white hover:bg-bookmark-purple hover:text-white rounded-md mx-4 my-6 md:my-0 px-7 py-3 uppercase">Login</button> -->
         </ul>
@@ -40,7 +40,7 @@
     </header>
 
     <!-- Hero -->
-    <section class="relative">
+    <section class="relative bg-bookmark-white">
       <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
         <div class="flex flex-1 flex-col items-center lg:items-start">
           <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">A Simple Bookmark Manager</h2>
@@ -64,7 +64,7 @@
     <section id="features" class="bg-bookmark-white py-20 mt-20 lg:mt-60">
       <!-- Heading -->
       <div class="sm:w-3/4 lg:w-2/4 mx-auto px-2">
-        <h1 class="lazy text-3xl font-semibold text-center text-bookmark-purple uppercase tracking-wide opacity-0 scale-80 transition duration-1000">Awesome Features</h1>
+        <h1 class="lazy text-3xl text-center text-bookmark-purple uppercase tracking-wide opacity-0 scale-80 transition duration-1000">Awesome Features</h1>
         <p class="lazy text-xl text-center text-bookmark-grey mt-4 opacity-0 scale-80 transition duration-2000">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
       </div>
 
@@ -111,8 +111,8 @@
           </div>
 
           <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h1 class="text-3xl text-bookmark-blue">Intelligent search</h1>
-            <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Our powerful search feature will help you find saved sites in no time at all. No need to crawl through all of your bookmarks.</p>
+            <h1 class="lazy text-3xl text-bookmark-blue opacity-0 scale-80 transition duration-1000">Intelligent search</h1>
+            <p class="lazy text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full opacity-0 scale-80 transition duration-1000">Our powerful search feature will help you find saved sites in no time at all. No need to crawl through all of your bookmarks.</p>
             <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">More Info</button>
           </div>
         </div>
@@ -147,14 +147,14 @@
     <section id="download" class="py-20 mt-20">
       <!-- Heading -->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 class="text-3xl text-center text-bookmark-purple uppercase tracking-wide">Download the extension</h1>
-        <p class="text-center text-bookmark-grey mt-4">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+        <h1 class="lazy text-3xl text-center text-bookmark-purple uppercase tracking-wide opacity-0 scale-80 transition duration-1000">Download the extension</h1>
+        <p class="lazy text-center text-bookmark-grey mt-4 opacity-0 scale-80 transition duration-1000">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
       </div>
 
       <!-- Cards -->
       <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
         <!-- Card 1 -->
-        <div class="flex flex-col rounded-md shadow-md lg:mb-16 bg-sky-50 hover:drop-shadow-xl">
+        <div class="flex flex-col rounded-md shadow-md lg:mb-16 bg-bookmark-white hover:drop-shadow-xl">
           <div class="p-6 flex flex-col items-center">
             <img src="./imgs/logo-chrome.svg" alt="logo-chrome" />
             <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
@@ -162,12 +162,12 @@
           </div>
           <hr class="border-b border-bookmark-white" />
           <div class="flex p-6">
-            <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">Install Extension</button>
+            <button type="button" class="flex-1 btn btn-purple hover:bg-indigo-700">Install Extension</button>
           </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="flex flex-col rounded-md shadow-md lg:my-8 bg-sky-50 hover:drop-shadow-xl">
+        <div class="flex flex-col rounded-md shadow-md lg:my-8 bg-bookmark-white hover:drop-shadow-xl">
           <div class="p-6 flex flex-col items-center">
             <img src="./imgs/logo-firefox.svg" alt="logo-firefox" />
             <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Firefox</h3>
@@ -175,12 +175,12 @@
           </div>
           <hr class="border-b border-bookmark-white" />
           <div class="flex p-6">
-            <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">Install Extension</button>
+            <button type="button" class="flex-1 btn btn-purple hover:bg-indigo-700">Install Extension</button>
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="flex flex-col rounded-md shadow-md lg:mt-16 bg-sky-50 hover:drop-shadow-xl">
+        <div class="flex flex-col rounded-md shadow-md lg:mt-16 bg-bookmark-white hover:drop-shadow-xl">
           <div class="p-6 flex flex-col items-center">
             <img src="./imgs/logo-opera.svg" alt="" />
             <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Opera</h3>
@@ -188,15 +188,68 @@
           </div>
           <hr class="border-b border-bookmark-white" />
           <div class="flex p-6">
-            <button type="button" class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black">Install Extension</button>
+            <button type="button" class="flex-1 btn btn-purple hover:bg-indigo-700">Install Extension</button>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="/src/script.js"></script>
+    <!-- FAQ -->
+    <section id="faq" class="bg-bookmark-white py-20">
+      <div class="container">
+        <!-- Heading -->
+        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+          <h1 class="lazy text-3xl text-center text-bookmark-purple uppercase tracking-wide opacity-100 scale-80 transition duration-1000">Frequently Asked Question</h1>
+          <p class="lazy text-center text-bookmark-grey mt-4 opacity-100 scale-80 transition duration-1000">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+        </div>
 
-    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+        <!-- FAQ Items -->
+        <div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
+          <div class="faq border-b py-4">
+            <div class="flex items-center">
+              <span class="flex-1 text-xl">What is a Bookmark?</span>
+              <span class="faq-icon"><i class="text-bookmark-purple fas fa-chevron-down"></i></span>
+            </div>
+            <div class="answer max-h-0 overflow-hidden transition-{max-h-0} duration-1000 ease-out">
+              <p class="pt-4">Programming is like sex: one mistake and you have to support it for the rest of your life.</p>
+            </div>
+          </div>
+
+          <div class="faq border-b py-4">
+            <div class="flex items-center">
+              <span class="flex-1 text-xl">How can I request a new browser?</span>
+              <span class="faq-icon"><i class="text-bookmark-purple fas fa-chevron-down"></i></span>
+            </div>
+            <div class="answer max-h-0 overflow-hidden transition-{max-h-0} duration-1000 ease-out">
+              <p class="pt-4">Software can be fast, reliable and cheap. Choose any two.</p>
+            </div>
+          </div>
+
+          <div class="faq border-b py-4">
+            <div class="flex items-center">
+              <span class="flex-1 text-xl">Is there a mobile app?</span>
+              <span class="faq-icon"><i class="text-bookmark-purple fas fa-chevron-down"></i></span>
+            </div>
+            <div class="answer max-h-0 overflow-hidden transition-{max-h-0} duration-1000 ease-out">
+              <p class="pt-4">Programmer: a person who fixed a problem that you don't know you have, in a way you don't understand</p>
+            </div>
+          </div>
+
+          <div class="faq border-b py-4">
+            <div class="flex items-center">
+              <span class="flex-1 text-xl">What about other Chromium browser?</span>
+              <span class="faq-icon"><i class="text-bookmark-purple fas fa-chevron-down"></i></span>
+            </div>
+            <div class="answer max-h-0 overflow-hidden transition-{max-h-0} duration-1000 ease-out">
+              <p class="pt-4">To understand what recursion is, you must first understand recursion.</p>
+            </div>
+          </div>
+
+          <a href="https://www.databasestar.com/programmer-jokes/" target="_blank" class="mt-10 flex-1 btn btn-purple hover:bg-indigo-700 text-center"><button type="button">More Info</button></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="/src/script.js"></script>
   </body>
 </html>

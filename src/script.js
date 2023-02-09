@@ -3,6 +3,7 @@ const icon = document.querySelector('.menu-icon');
 // let blur = document.getElementById('features');
 const btn_m = document.querySelector('.btn');
 const pop_up = document.querySelector('.popup');
+const faqs = document.querySelectorAll('.faq');
 
 // Toggle Menu
 icon.onclick = function toggleMenu() {
@@ -17,7 +18,6 @@ nav_list.addEventListener('click', () => {
 });
 
 // Pop-up window
-
 // blur.addEventListener('click', () => {
 //   blur.classList.toggle('active');
 // });
@@ -51,8 +51,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 //   pop_up.target.classList.toggle('active');
 // });
 
-// console.log(btn_m);
-
+// Pop-up window
 const toggle = () => {
   // let blur = document.getElementById('blur');
   // blur.classList.toggle('active');
@@ -60,3 +59,10 @@ const toggle = () => {
   // let popup = document.getElementById('popup');
   pop_up.classList.toggle('active');
 };
+
+// toggle FAQ
+faqs.forEach((el) => {
+  el.addEventListener('click', () => {
+    el.classList.toggle('active');
+  });
+});
