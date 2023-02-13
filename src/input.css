@@ -20,36 +20,16 @@
   @apply inline-block py-3 px-2 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-700 duration-500;
 }
 
-/* @keyframes popHeading {
-  from {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-h1 {
-  animation: popHeading 1s ease-in-out;
-} */
-
+/* toggle modal */
 .popup.active {
   z-index: 20;
   visibility: visible;
-  opacity: 0.9;
+  opacity: 1;
   transform: scale(1.3);
   transition: 1s;
 }
 
 /* toggle faq */
-.answer {
-  /* max-height: 0; */
-  /* overflow: hidden; */
-  /* transition: max-height 1s ease; */
-}
-
 .faq.active .answer {
   max-height: 100px;
   animation: fade 1s ease-in-out;

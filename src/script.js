@@ -1,6 +1,5 @@
 const nav_list = document.querySelector('ul');
 const icon = document.querySelector('.menu-icon');
-// let blur = document.getElementById('features');
 const btn_m = document.querySelector('.btn');
 const pop_up = document.querySelector('.popup');
 const faqs = document.querySelectorAll('.faq');
@@ -14,17 +13,8 @@ icon.onclick = function toggleMenu() {
 nav_list.addEventListener('click', () => {
   nav_list.classList.remove('top-[0px]');
   nav_list.classList.remove('opacity-100');
-  icon.name = 'menu';
+  // icon.name = 'menu';
 });
-
-// Pop-up window
-// blur.addEventListener('click', () => {
-//   blur.classList.toggle('active');
-// });
-
-// pop_btn.onclick = function toggleModal() {
-//   popup.classList.add('opacity-100');
-// };
 
 // Lazy loading
 const observer = new IntersectionObserver(
@@ -45,20 +35,15 @@ const observer = new IntersectionObserver(
 const hiddenElements = document.querySelectorAll('.lazy');
 hiddenElements.forEach((el) => observer.observe(el));
 
-// btn_m.addEventListener('click', () => {
-// popup.classList.add('opacity-100');
-// popup.classList.add('scale-110');
-//   pop_up.target.classList.toggle('active');
-// });
-
 // Pop-up window
 const toggle = () => {
-  // let blur = document.getElementById('blur');
-  // blur.classList.toggle('active');
-
-  // let popup = document.getElementById('popup');
+  // blurring.classList.toggle('active');
   pop_up.classList.toggle('active');
 };
+
+pop_up.addEventListener('click', () => {
+  pop_up.classList.remove('active');
+});
 
 // toggle FAQ
 faqs.forEach((el) => {
